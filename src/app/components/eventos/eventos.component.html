@@ -1,0 +1,57 @@
+<mat-tab-group class="demo-tab-group">
+  <mat-tab label="Eventos">
+    <div class="demo-tab-content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+      Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+      In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+      feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+      orci enim rutrum enim, vel tempor sapien arcu a tellus.
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Nuevo Evento" >
+        <div class="container-card">
+            <mat-form-field>
+              <input matInput placeholder="Titulo">
+            </mat-form-field>
+          
+            <mat-form-field>
+                <input matInput placeholder="Author" >
+            </mat-form-field>
+        
+            <mat-form-field >
+              <textarea matInput placeholder="Descripcion" ></textarea>
+            </mat-form-field>
+          
+            <mat-form-field style="width: 20%">
+                <input matInput [matDatepicker]="picker" placeholder="Fecha">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field style=" width: 30%" >
+              <mat-select placeholder="Catergoria">
+                <mat-option value="option">Informativo</mat-option>
+                <mat-option value="option">Deportivo</mat-option>
+                <mat-option value="option">Option</mat-option>
+                <mat-option value="option">Option</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <button (click)="nuevoElemeto()" >+</button>
+            
+          </div>  
+  
+  </mat-tab>
+  <mat-tab label="Comentarios">
+   <div class="demo-tab-content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+      Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+      In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+      feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+      orci enim rutrum enim, vel tempor sapien arcu a tellus.
+
+    </div>  
+  </mat-tab>
+  
+</mat-tab-group>
+
+  
